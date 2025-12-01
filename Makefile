@@ -9,3 +9,10 @@ run:
 
 %:
 	@:
+
+newday:
+	@if [ -z "$(DAY)" ]; then \
+		echo "Usage: make newday DAY=<number>"; \
+		exit 1; \
+	fi
+	$(PYTHON) scripts/new_day_generator.py $(DAY)
