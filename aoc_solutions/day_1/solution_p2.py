@@ -1,3 +1,5 @@
+"""Advent of Code - Day 1 Part 2"""
+
 from aoc_solutions.utils import get_input, submit_answer
 
 DAY = 1
@@ -30,8 +32,11 @@ def part_2(data: str) -> int:
         zero_counts += crosses
     return zero_counts
 
-print(part_2(get_input(day=DAY, example=True)))
-print(part_2(get_input(day=DAY, example=False)))
+if __name__ == "__main__":
+    example = get_input(day=DAY, example=True)
+    print("Example:", part_2(example))
 
-submit_answer(day=DAY, part=2, answer=part_2(get_input(day=DAY, example=False)))
+    real = get_input(day=DAY, example=False)
+    print("Answer:", part_2(real))
+    submit_answer(day=DAY, part=2, answer=part_2(real))
 
