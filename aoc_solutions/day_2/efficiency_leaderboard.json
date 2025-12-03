@@ -12,5 +12,19 @@
         "runtime_ms": 16058.169582975097,
         "peak_memory_kb": 3.0439453125,
         "timestamp": 1764695068.944125
+    },
+    {
+        "day": 2,
+        "part": 2,
+        "runtime_ms": 15967.814708943479,
+        "peak_memory_kb": 3.0439453125,
+        "timestamp": 1764699061.435454
+    },
+    {
+        "day": 2,
+        "part": 2,
+        "runtime_ms": 4603.62133407034,
+        "peak_memory_kb": 2.4736328125,
+        "timestamp": 1764699373.394495
     }
 ]

@@ -8,17 +8,20 @@ def check_for_repeating_digits(lower: int, upper: int) -> int:
     repetition_sum = 0
     for number in range(lower, upper + 1):
         num_str = str(number)
-        for i in range(1, len(num_str)):
-            if len(num_str) % i != 0:
+        num_len = len(num_str)
+        max_divisor = num_len // 2 + 1
+        for i in range(1, max_divisor):
+            if num_len % i != 0:
                 continue # Must be divisible to have repeating segments
             # Split string into equal parts of length i
-            parts = [num_str[j:j+i] for j in range(0, len(num_str), i)]
+            first_part = num_str[:i]
+            whole_str = first_part * (num_len // i)
+            
+            if whole_str != num_str:
+                continue
 
-            # Check if all parts are the same
-            if all(part == parts[0] for part in parts):
-                repetition_sum += number
-                break
-    
+            repetition_sum += number
+            break
     return repetition_sum
 
 def part_2(data: str) -> int:
