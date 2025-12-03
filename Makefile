@@ -18,7 +18,7 @@ run_metrics:
 	@:
 
 update_readme:
-	$(PYTHON) scripts/update_efficiency_table.py
+	$(PYTHON) -m scripts.update_efficiency_table
 
 newday:
 	@if [ -z "$(DAY)" ]; then \

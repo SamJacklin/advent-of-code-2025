@@ -14,7 +14,8 @@ Below is a summary of the metric results of the best performing solutions for ea
 Day | P1 Runtime (ms) | P1 Memory (KB) | P2 Runtime (ms) | P2 Memory (KB)
 --- | --------------- | ------------- | --------------- | -------------
 1 | 3.185 | 209.3 | 4.844 | 209.3
-2 | 2014.589 | 2.5 | 15727.221 | 3.0
+2 | 1984.406 | 2.5 | 4603.621 | 2.5
+3 | 0.646 | 29.6 | 2.393 | 29.5
 <!-- efficiency-table-end -->
 
 ## Usage
