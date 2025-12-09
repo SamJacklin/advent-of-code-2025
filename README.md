@@ -19,6 +19,7 @@ Day | P1 Runtime (ms) | P1 Memory (KB) | P2 Runtime (ms) | P2 Memory (KB)
 4 | 10.657 | 25.9 | 113.531 | 599.3
 5 | 3.687 | 96.1 | 1.272 | 53.4
 6 | 5.929 | 281.8 | 36.421 | 450.3
+7 | 8.308 | 37.0 | 4.010 | 39.6
 <!-- efficiency-table-end -->
 
 ## Usage
